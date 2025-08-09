@@ -1,6 +1,6 @@
 <!-- Navbar content -->
 <nav class='navbar navbar-expand-lg bg-body-tertiary container-fluid' data-bs-theme='dark'>
-   <div class='container-fluid'>
+   <div class='container'>
       <a class='navbar-brand' href='/'>Navbar</a>
       <button
          class='navbar-toggler'
@@ -14,13 +14,12 @@
          <span class='navbar-toggler-icon'></span>
       </button>
       <div class='collapse navbar-collapse' id='navbarSupportedContent'>
-         <ul class='navbar-nav me-auto mb-2 mb-lg-0'>
-            <li class='nav-item'>
-               <a class='nav-link active' aria-current='page' href='#'>Home</a>
-            </li>
-            <li class='nav-item'>
-               <a class='nav-link' href='/courses/create'>Create Course</a>
-            </li>
+         <ul class='navbar-nav ms-auto mb-2 mb-lg-0'>
+            <img
+               class='avatar'
+               src='https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/453212213_1206786913794514_5858085507630456444_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=fOELuwNYRGcQ7kNvwFBprwq&_nc_oc=AdkD8DIigwn8cHNxCpVuyK8O6Pg2wdOjluL7iIT9AKnYDMmx10VheasNSzMcAXXPETfpzck2_Ey0ibdtssrHcMqk&_nc_zt=23&_nc_ht=scontent.fdad2-1.fna&_nc_gid=NOhPCz5VA6chuZRWXfO5Ug&oh=00_AfTlULWMoPf3BgPcsjO4y1RBfkTkKeYHZkNTALMUuWG0Yw&oe=687E94DF'
+               alt=''
+            />
             <li class='nav-item dropdown'>
                <a
                   class='nav-link dropdown-toggle'
@@ -29,23 +28,17 @@
                   data-bs-toggle='dropdown'
                   aria-expanded='false'
                >
-                  Dropdown
+                  Hoàng Quân
                </a>
                <ul class='dropdown-menu'>
-                  <li><a class='dropdown-item' href='#'>Action</a></li>
-                  <li><a class='dropdown-item' href='#'>Another action</a></li>
-                  <li><hr class='dropdown-divider' /></li>
-                  <li><a class='dropdown-item' href='#'>Something else here</a></li>
+                  <li><a class='dropdown-item' href='/courses/create'>Thêm khóa học</a></li>
+                  <li><a class='dropdown-item' href='/me/stored/courses'>Khóa học của tôi</a></li>
+                  <li><a class='dropdown-item' href='/me/stored/news'>Bài viết của tôi</a></li>
+                  <li><a class='dropdown-item'>Đăng xuất</a></li>
+
                </ul>
             </li>
-            <li class='nav-item'>
-               <a class='nav-link disabled' aria-disabled='true'>Disabled</a>
-            </li>
          </ul>
-         <form class='d-flex' role='search'>
-            <input class='form-control me-2' type='search' placeholder='Search' aria-label='Search' />
-            <button class='btn btn-outline-success' type='submit'>Search</button>
-         </form>
       </div>
    </div>
 </nav>
